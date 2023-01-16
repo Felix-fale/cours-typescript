@@ -1,15 +1,17 @@
-type identity = { name: string; age: number; isMajeur: boolean; hobbies: string[]; }
+interface PersonId {
+    name: string;
+    color: string;
+    age: number;
+}
 
-const identity: identity = {
-    name: "alexis",
-    age: 27,
-    isMajeur: true,
-    hobbies: ['basket', 'lire', 'ecrire']
-};
+const user1: PersonId ={
+    name: "alex",
+    color: "red",
+    age: 27
+}
 
-const identity2: identity = {
-    name: "olivia",
-    age: 27,
-    isMajeur: true,
-    hobbies: ['basket', 'lire', 'ecrire']
-};
+function hello(person: PersonId) {
+    console.log(`Bonjour a toi ${person.name} et tu as ${person.age} ans.`);
+}
+
+hello(user1);

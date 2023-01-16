@@ -1,12 +1,10 @@
-var identity = {
-    name: "alexis",
-    age: 27,
-    isMajeur: true,
-    hobbies: ['basket', 'lire', 'ecrire']
+"use strict";
+var user1 = {
+    name: "alex",
+    color: "red",
+    age: 27
 };
-var identity2 = {
-    name: "olivia",
-    age: 27,
-    isMajeur: true,
-    hobbies: ['basket', 'lire', 'ecrire']
-};
+function hello(person) {
+    console.log("Bonjour a toi ".concat(person.name, " et tu as ").concat(person.age, " ans."));
+}
+hello(user1);
