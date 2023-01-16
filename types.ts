@@ -1,8 +1,14 @@
-let friends: (number | string)[] = [];
-friends= [27, 25, 'string'];
+enum Weekdays {
+    lundi = 1,
+    mardi,
+    mercredi
+}
 
-let userData: {name: string; age: number; isMajeur: true} = {
-    name: "alexis",
-    age: 27,
-    isMajeur: true
-};
+console.log(Weekdays[0]);
+console.log(Weekdays[1]);
+
+// tuples
+
+let identity: [string, number] = ["alexis", 27];
+
+console.log(identity);
