@@ -1,0 +1,10 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "commonjs",
+    "noEmitOnError": true,
+    "strict": true,
+    "noImplicitAny": true,
+  }
+}
