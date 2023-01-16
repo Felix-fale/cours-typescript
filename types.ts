@@ -1,28 +1,15 @@
-interface IUserProfile {
-    firstname: string;
-    nickname: string;
-    age?: number;
+interface IHello {
+    (name: string, age?: number): void;
 }
 
-interface IAdvanceUserProfile extends IUserProfile{
-    hobbies: string[];
-    color: string;
-    isMajeur: boolean;
+const sayHello: IHello = name =>{
+    console.log(`bonjour a toi ${name}`);
 }
 
-const user2 = <IAdvanceUserProfile>{};
-
-user2.firstname = "justine";
-console.log(user2.firstname);
-
-
-const user1: IAdvanceUserProfile={
-    firstname: "alexis",
-    nickname: "ayu",
-    age: 27,
-    hobbies: ["lire", "basket"],
-    color: "crimson",
-    isMajeur: true
+const bestFriend: IHello = name =>{
+    return name
 }
 
-console.log(user1);
+sayHello("alexis")
+console.log(`${bestFriend("justine")}`);
+

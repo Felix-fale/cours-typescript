@@ -1,13 +1,9 @@
 "use strict";
-var user2 = {};
-user2.firstname = "justine";
-console.log(user2.firstname);
-var user1 = {
-    firstname: "alexis",
-    nickname: "ayu",
-    age: 27,
-    hobbies: ["lire", "basket"],
-    color: "crimson",
-    isMajeur: true
+var sayHello = function (name) {
+    console.log("bonjour a toi ".concat(name));
 };
-console.log(user1);
+var bestFriend = function (name) {
+    return name;
+};
+sayHello("alexis");
+console.log("".concat(bestFriend("justine")));
