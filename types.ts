@@ -1,14 +1,12 @@
-enum Weekdays {
-    lundi = 1,
-    mardi,
-    mercredi
+function helloWord(): void {
+    console.log('salut a tous');
+    
 }
 
-console.log(Weekdays[0]);
-console.log(Weekdays[1]);
+helloWord();
 
-// tuples
+function addition(x: number, y: number): number{
+    return x + y;
+}
 
-let identity: [string, number] = ["alexis", 27];
-
-console.log(identity);
+console.log(addition(5, 5));
