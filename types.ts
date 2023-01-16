@@ -1,12 +1,15 @@
-function helloWord(): void {
-    console.log('salut a tous');
-    
-}
+type identity = { name: string; age: number; isMajeur: boolean; hobbies: string[]; }
 
-helloWord();
+const identity: identity = {
+    name: "alexis",
+    age: 27,
+    isMajeur: true,
+    hobbies: ['basket', 'lire', 'ecrire']
+};
 
-function addition(x: number, y: number): number{
-    return x + y;
-}
-
-console.log(addition(5, 5));
+const identity2: identity = {
+    name: "olivia",
+    age: 27,
+    isMajeur: true,
+    hobbies: ['basket', 'lire', 'ecrire']
+};

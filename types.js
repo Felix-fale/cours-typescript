@@ -1,8 +1,12 @@
-function helloWord() {
-    console.log('salut a tous');
-}
-helloWord();
-function addition(x, y) {
-    return x + y;
-}
-console.log(addition(5, 5));
+var identity = {
+    name: "alexis",
+    age: 27,
+    isMajeur: true,
+    hobbies: ['basket', 'lire', 'ecrire']
+};
+var identity2 = {
+    name: "olivia",
+    age: 27,
+    isMajeur: true,
+    hobbies: ['basket', 'lire', 'ecrire']
+};
