@@ -1,17 +1,15 @@
-interface PersonId {
-    name: string;
-    color: string;
-    age: number;
+interface IUserProfile {
+    readonly firstname: string;
+    nickname: string;
+    age?: number;
+    password: string;
 }
 
-const user1: PersonId ={
-    name: "alex",
-    color: "red",
-    age: 27
+const user1: IUserProfile={
+    firstname: "alexis",
+    nickname: "ayu",
+    // age: 27,
+    password: "idk",
 }
 
-function hello(person: PersonId) {
-    console.log(`Bonjour a toi ${person.name} et tu as ${person.age} ans.`);
-}
-
-hello(user1);
+console.log(user1);
