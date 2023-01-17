@@ -1,9 +1,16 @@
 "use strict";
-var sayHello = function (name) {
-    console.log("bonjour a toi ".concat(name));
+var days = [1, 2, 3, 4, 5];
+console.log(days);
+days.push(6);
+console.log(days);
+var myObject = {
+    title: "alexis",
+    age: 27,
+    color: "crimon",
+    isMajeur: true,
+    sayHello: function (name) {
+        console.log(name);
+    }
 };
-var bestFriend = function (name) {
-    return name;
-};
-sayHello("alexis");
-console.log("".concat(bestFriend("justine")));
+console.log(myObject.title);
+myObject.sayHello("alexis");

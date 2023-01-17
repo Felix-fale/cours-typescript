@@ -1,15 +1,29 @@
-interface IHello {
-    (name: string, age?: number): void;
+interface IRepertory extends Array<number> {
+    [index: number]: number;
 }
 
-const sayHello: IHello = name =>{
-    console.log(`bonjour a toi ${name}`);
+const days: IRepertory = [1,2,3,4,5];
+
+console.log(days);
+days.push(6)
+console.log(days);
+
+// --------------------
+
+interface IObject{
+    [index: string]: any;
+    sayHello: {(name: string): void}
 }
 
-const bestFriend: IHello = name =>{
-    return name
+const myObject: IObject = {
+    title: "alexis",
+    age: 27,
+    color: "crimon",
+    isMajeur: true,
+    sayHello(name: string): void{
+        console.log(name);
+    }
 }
 
-sayHello("alexis")
-console.log(`${bestFriend("justine")}`);
-
+console.log(myObject.title);
+myObject.sayHello("alexis")
